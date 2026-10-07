@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Pirata+One&family=Marck+Script&display=swap');
+* { box-sizing: border-box; }
+body { margin: 0; background: #000; color: #fff; font-family: 'Marck Script', cursive; font-size: 1.2rem; }
+a { color: #9fd8cf; }
+h2 { font-family: 'Pirata One', cursive; font-size: 2.6rem; text-align: center; }
+.full { display: block; width: 100%; }
+
+.chars { display: flex; flex-wrap: wrap; align-items: center; justify-content: center; gap: 40px; padding: 40px 20px; }
+.chars h2 { max-width: 300px; }
+.grid { display: grid; grid-template-columns: repeat(3, 200px); gap: 20px; }
+.card { background: #eee; padding: 8px 8px 6px; color: #222; text-align: center; text-decoration: none; box-shadow: 0 4px 12px rgba(0,0,0,.7); transition: transform .3s; }
+.card:hover { transform: scale(1.06); }
+.card img { width: 100%; display: block; }
+.card span { display: block; padding-top: 6px; }
+
+.plot { max-width: 800px; margin: 0 auto; padding: 20px 20px 60px; line-height: 1.5; }
+
+.detail { display: flex; flex-wrap: wrap; gap: 30px; max-width: 800px; margin: 40px auto; padding: 0 20px; }
+.detail img { width: 280px; max-width: 100%; }
+.detail > div { flex: 1; min-width: 250px; }
+.detail h2 { text-align: left; }
+
+@media (max-width: 700px) { .grid { grid-template-columns: repeat(2, 1fr); } }

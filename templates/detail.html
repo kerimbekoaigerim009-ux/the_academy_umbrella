@@ -1,0 +1,20 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ c.name }}</title>
+  <link rel="stylesheet" href="{% static 'style.css' %}">
+</head>
+<body>
+  <div class="detail">
+    <img src="{{ c.photo.url }}" alt="{{ c.name }}">
+    <div>
+      <h2>{{ c.name }}</h2>
+      <p>{{ c.description }}</p>
+      <a href="{% url 'index' %}">← Назад</a>
+    </div>
+  </div>
+</body>
+</html>
